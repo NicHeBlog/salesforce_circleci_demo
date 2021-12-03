@@ -1,7 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
-        
     <div class="slds-p-around_small">
-        Hello from DF2018!
+        Hello It's Circle CI demo part!
     </div>
-    
 </aura:component>
