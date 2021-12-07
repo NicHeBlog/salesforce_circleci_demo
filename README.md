@@ -1,19 +1,18 @@
-# Continuous Integration with GitHub, SFDX and CircleCI ...Easier than you think!
-# Note this is a copied github repo from mickwheelz/DF2018-Demo branch
-I hope you enjoyed my talk at Dreamforce 2018!
+# Continuous Integration with GitHub, SFDX and CircleCI
+# Note: This repo just take reference from mickwheelz/DF2018-Demo
 
-You can use this repository as a base for setting up your own continuous integration workflow!
-
-This repository contains build scripts (located in the `build/` folder) and an example `config.yml` file in the `.circleci/` folder to get you started
 
 ## Getting Started
 
 1. You first need to create a certificate and key to authenticate with. To do this you can run the script in `build/generate-keys.sh`
+    `cd build
+     ./generate-keys.sh 
+    `
 
     * Follow the prompts when creating the certificate files
     * Take note of the Base64 output, as you will need this to set up CircleCI later
 
-2. You will need to create a connected app in your production (and any sandboxes you wish to use CI with)
+2. You will need to create a Connected App in your production (and any sandboxes you wish to use CI with)
 
     * First, from Setup, enter App in the Quick Find box, then select App Manager. Click New Connected App.
     * Give your application a name such as 'CircleCI' 
